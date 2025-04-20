@@ -1,0 +1,85 @@
+/* Barre supérieure */
+.topbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Un ton plus foncé pour la barre */
+    padding: 15px 30px; /* Plus d'espace autour pour une apparence plus aérée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère pour ajouter de la profondeur */
+}
+
+/* Logo */
+.topbar .logo img {
+    width: 180px; /* Logo un peu plus grand */
+    transition: transform 0.3s ease; /* Animation fluide au survol */
+}
+
+.topbar .logo img:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Liens de navigation */
+.topbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour chaque élément de la liste */
+.topbar .nav-links li {
+    margin-left: 30px; /* Plus d'espace entre les liens */
+}
+
+/* Style des liens */
+.topbar .nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px; /* Taille de texte un peu plus grande */
+    padding: 8px 15px; /* Plus de padding pour un bouton plus agréable */
+    border-radius: 5px; /* Coins arrondis pour les liens */
+    font-weight: 500; /* Poids de police moyen pour un look plus moderne */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition fluide pour les interactions */
+}
+
+/* Effet au survol des liens */
+.topbar .nav-links li a:hover {
+    background-color: #575d68; /* Changement de couleur de fond au survol */
+    border-radius: 8px; /* Coins plus arrondis au survol */
+    transform: translateY(-3px); /* Légère élévation au survol pour un effet interactif */
+}
+
+/* Responsive : Adaptation pour les écrans plus petits */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column; /* Empiler les éléments pour les petits écrans */
+        align-items: center; /* Centrer les éléments */
+        padding: 15px; /* Réduire l'espace autour */
+    }
+
+    .topbar .nav-links {
+        flex-direction: column; /* Empiler les liens verticalement */
+        margin-top: 15px; /* Espacement entre le logo et les liens */
+    }
+
+    .topbar .nav-links li {
+        margin-left: 0;
+        margin-top: 10px; /* Espacement entre les liens */
+    }
+}
+.logout-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    color: #007bff; /* لون أزرق عند التحويم */
+    text-decoration: none;
+  }

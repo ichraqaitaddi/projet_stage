@@ -1,0 +1,23 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ecf0f1;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .dashboard-main {
+    margin-left: 256px; /* تعويض ml-64 */
+    padding: 24px;       /* تعويض p-6 */
+    width: 100%;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;     /* تعويض text-2xl */
+    font-weight: bold;   /* تعويض font-bold */
+    margin-bottom: 16px; /* تعويض mb-4 */
+  }

@@ -1,0 +1,76 @@
+.accueil-container {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Top Banner */
+.top-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
+
+.top-banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(70%);
+}
+
+/* Overlay text */
+.banner-overlay {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.banner-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.banner-subtitle {
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Consultation Section */
+.consultation-section {
+  padding: 50px 20px;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.consultation-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.consultation-btn:hover {
+  background-color: #004d40;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
