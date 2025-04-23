@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './accueil.css';
+import Topbar from '../../components/TopBar/topbar';
+import Footer from '../../components/Footer/footer';
 
 const villas = [
   { id: 1, image: '/images/villa4.jpg', alt: 'Villa1' },
@@ -19,6 +21,7 @@ function Accueil() {
 
   return (
     <div className="accueil-container">
+      <Topbar/>
       <div className="slider">
         <img src={villas[current].image} alt={villas[current].alt} className="slider-image" />
       </div>
@@ -51,8 +54,10 @@ function Accueil() {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
 
 export default Accueil;
+

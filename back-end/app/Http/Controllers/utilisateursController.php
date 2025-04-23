@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 use App\Models\utilisateurs;
+use Illuminate\Support\Facades\Log;
+
 
 class utilisateursController extends Controller
 {
@@ -71,21 +73,25 @@ class utilisateursController extends Controller
         return response()->json($user);
     }
 
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        $user = utilisateurs::find($id);
-        if (!$user) return response()->json(['message' => 'Utilisateur non trouvé'], 404);
-
-        $user->update($request->all());
-        return response()->json(['message' => 'Utilisateur mis à jour', 'user' => $user]);
+        Log::info('Update request:', $request->all()); // يسجل شنو جاي من React
+    
+        $validated = $request->validate([
+            'email' => 'required|email',
+            'admin' => 'required|in:0,1',
+        ]);
+    
+        $utilisateur = utilisateurs::findOrFail($id);
+        $utilisateur->update($validated);
+    
+        return response()->json(['message' => 'Utilisateur mis à jour']);
     }
-
-    public function destroy(string $id)
+    
+    public function destroy($id)
     {
-        $user = utilisateurs::find($id);
-        if (!$user) return response()->json(['message' => 'Utilisateur non trouvé'], 404);
-
-        $user->delete();
+        $utilisateur = utilisateurs::findOrFail($id);
+        $utilisateur->delete();
         return response()->json(['message' => 'Utilisateur supprimé']);
     }
 }

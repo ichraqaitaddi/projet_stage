@@ -25,6 +25,8 @@ Route::get('/utilisateurs', [utilisateursController::class, 'index']);
 
 //route pour crud villas
 Route::apiResource('villas', App\Http\Controllers\Api\VillaController::class);
+Route::put('/utilisateurs/{id}', [utilisateursController::class, 'update']);
+Route::delete('/utilisateurs/{id}', [utilisateursController::class, 'destroy']);
 
 
 

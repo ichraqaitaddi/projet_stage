@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './service.css';
+import Topbar from '../../components/TopBar/topbar';
+import Footer from '../../components/Footer/footer';
 
 function Service() {
   const [villas, setVillas] = useState([]);
@@ -16,7 +18,9 @@ function Service() {
   }, []);
 
   return (
+    
     <div className="services-container">
+        <Topbar/>
       <h2>Nos Villas</h2>
       <div className="services">
         {villas.map(villa => (
@@ -28,7 +32,9 @@ function Service() {
             <p><strong>Adresse:</strong> {villa.adresse}</p>
           </div>
         ))}
+       
       </div>
+      <Footer/>
     </div>
   );
 }

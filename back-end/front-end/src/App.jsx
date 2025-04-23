@@ -6,6 +6,7 @@ import Topbar from "./components/TopBar/topbar";
 import Footer from "./components/Footer/footer";
 import Service from "./page/nos-service/service";
 import VillaCrud from "./page/nos-service/villaCrud";
+import Utilisateurs from './page/dashboard/utilisateurs';
 
 //import Services from "./page/services/Services";
 
@@ -14,7 +15,7 @@ import VillaCrud from "./page/nos-service/villaCrud";
 function App(){
     return(
         <div>
-            <Topbar />
+           
 
             <Routes>
                 <Route path="/" element={<Accuiel/>}/>
@@ -22,9 +23,10 @@ function App(){
                 <Route  path="/villas" element={<Service/>}/>
                 <Route path="/villaCrud" element={<VillaCrud/>}/>
                 <Route path="/dashboard" element={<Dashboard/>}/>
+                <Route path="/users" element={<Utilisateurs />} />
             </Routes>
             
-            <Footer/>
+            
 
         </div>
     )

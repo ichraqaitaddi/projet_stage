@@ -15,7 +15,7 @@ const Sidebar = () => {
       </div>
 
       <ul className="sidebar-links">
-        <li><Link to="/dashboard">Utilisateurs</Link></li>
+        <li><Link to="/users">Utilisateurs</Link></li>
         <li><Link to="/settings">Paramètres</Link></li>
       </ul>
 
