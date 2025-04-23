@@ -1,76 +1,106 @@
-.accueil-container {
-  font-family: 'Arial', sans-serif;
-}
-
-/* Top Banner */
-.top-banner {
-  position: relative;
-  overflow: hidden;
-  padding: 0 30px;
-  margin-bottom: 40px;
-}
-
-.top-banner img {
+/* Pour garantir que tout le contenu prend toute la largeur */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   width: 100%;
-  height: 300px;
+}
+
+/* Container global de l'accueuil */
+.accueil-container {
+  width: 100%; /* Prend toute la largeur de la page */
+  padding: 0;
+}
+
+/* Style du slider pour qu'il occupe toute la largeur et la hauteur */
+.slider {
+  position: relative;
+  width: 100%; /* Prend toute la largeur de l'écran */
+  height: 70vh; /* Prend toute la hauteur de l'écran */
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%; /* L'image prend toute la largeur */
+  height: 100%; /* L'image prend toute la hauteur du slider */
   object-fit: cover;
-  border-radius: 20px;
-  filter: brightness(70%);
 }
 
-/* Overlay text */
-.banner-overlay {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
+/* Section présentation sous le slider */
+.presentation {
   text-align: center;
-  z-index: 2;
-}
-
-.banner-title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.banner-subtitle {
-  font-size: 18px;
-}
-
-/* Hero Section */
-.hero-section {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f9f9f9;
-}
-
-/* Consultation Section */
-.consultation-section {
-  padding: 50px 20px;
-  background-color: #e0f7fa;
-  text-align: center;
-}
-
-.consultation-btn {
   margin-top: 20px;
-  padding: 12px 25px;
-  font-size: 16px;
-  background-color: #00796b;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 0 20px; /* Un peu de padding pour le texte */
 }
 
-.consultation-btn:hover {
-  background-color: #004d40;
+.presentation h2 {
+  font-size: 2rem;
+  color: #333;
 }
 
-/* Contact Section */
-.contact-section {
-  padding: 40px 20px;
-  background-color: #f1f1f1;
+.presentation p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Conteneur des services */
+.services-container {
+  margin-top: 40px;
   text-align: center;
+}
+
+.services-container h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Contenu des services (les cartes) */
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Ajuste la taille des cartes */
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-card h4 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
 }

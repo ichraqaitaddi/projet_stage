@@ -23,6 +23,10 @@ Route::post('/register', [utilisateursController::class, 'register']);
 Route::post('/login', [utilisateursController::class, 'login']);
 Route::get('/utilisateurs', [utilisateursController::class, 'index']);
 
+//route pour crud villas
+Route::apiResource('villas', App\Http\Controllers\Api\VillaController::class);
+
+
 
 
 

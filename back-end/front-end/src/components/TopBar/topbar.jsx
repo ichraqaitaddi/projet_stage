@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './topbar.css';
+import carredorLogo from './carredor.png'; // ajuste l'extension si besoin
+
 
 const Topbar = () => {
   const navigate = useNavigate();
@@ -16,14 +18,14 @@ const Topbar = () => {
   return (
     <div className="topbar">
       <div className="logo">
-        <img src="path_to_logo.png" alt="Logo" />
+        
+        <img src={carredorLogo} alt="Logo" />
       </div>
       <ul className="nav-links">
         <li><Link to="/">Accueil</Link></li>
         {isAdmin && <li><Link to="/dashboard">Tableau de bord</Link></li>}
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/about">À propos</Link></li>
-
+        <li><Link to="/villas">Nos services</Link></li>
+        <li><Link to="/tirage-au-sort">Tirage au sort</Link></li>
         {!userData ? (
           <li><Link to="/login">Connexion</Link></li>
         ) : (
