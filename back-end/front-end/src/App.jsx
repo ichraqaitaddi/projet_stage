@@ -5,7 +5,7 @@ import Accuiel from "./page/Accuiel/accuiel"
 import Topbar from "./components/TopBar/topbar";
 import Footer from "./components/Footer/footer";
 import Service from "./page/nos-service/service";
-import VillaCrud from "./page/nos-service/villaCrud";
+import VillaCrud from "./page/dashboard/villaCrud";
 import Utilisateurs from './page/dashboard/utilisateurs';
 
 //import Services from "./page/services/Services";
