@@ -7,6 +7,8 @@ import Footer from "./components/Footer/footer";
 import Service from "./page/nos-service/service";
 import VillaCrud from "./page/dashboard/villaCrud";
 import Utilisateurs from './page/dashboard/utilisateurs';
+import VillaDetails from './page/VillaDetails/VillaDetails'; // <-- hna tzid
+
 
 //import Services from "./page/services/Services";
 
@@ -24,6 +26,7 @@ function App(){
                 <Route path="/villaCrud" element={<VillaCrud/>}/>
                 <Route path="/dashboard" element={<Dashboard/>}/>
                 <Route path="/users" element={<Utilisateurs />} />
+                <Route path="/villa/:id" element={<VillaDetails />} /> {/* <-- route detail */}
             </Routes>
             
             

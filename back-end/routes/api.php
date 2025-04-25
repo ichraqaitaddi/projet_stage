@@ -28,6 +28,7 @@ Route::apiResource('villas', App\Http\Controllers\Api\VillaController::class);
 Route::put('/utilisateurs/{id}', [utilisateursController::class, 'update']);
 Route::delete('/utilisateurs/{id}', [utilisateursController::class, 'destroy']);
 
+Route::get('/villas/{id}', [VillaController::class, 'show']);
 
 
 
