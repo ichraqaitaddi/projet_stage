@@ -25,7 +25,7 @@ const Topbar = () => {
         <li><Link to="/">Accueil</Link></li>
         {isAdmin && <li><Link to="/dashboard">Tableau de bord</Link></li>}
         <li><Link to="/villas">Nos services</Link></li>
-        <li><Link to="/tirage-au-sort">Tirage au sort</Link></li>
+        <li><Link to="/tirage">Tirage au sort</Link></li>
         {!userData ? (
           <li><Link to="/login">Connexion</Link></li>
         ) : (

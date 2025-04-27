@@ -1,0 +1,60 @@
+.acheter-cle-container {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .acheter-cle-content {
+    padding: 100px;
+  }
+  
+  .cle-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cle-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .cle-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .cle-prix {
+    font-size: 20px;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .input-nombre {
+    margin-bottom: 20px;
+  }
+  
+  .input-nombre input {
+    margin-left: 10px;
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .acheter-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .acheter-button:hover {
+    background-color: #ff8533;
+  }
+  

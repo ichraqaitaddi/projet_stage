@@ -1,0 +1,253 @@
+.tirage-hero {
+    background: #f5f5f5;
+    padding: 80px 20px;
+  }
+  
+  .tirage-hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .tirage-hero-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .tirage-hero-images img {
+    width: 270px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .img-normal {
+    transform: rotate(0deg);
+  }
+  
+  .img-tilt-left {
+    transform: rotate(-10deg);
+  }
+  
+  .img-tilt-right {
+    transform: rotate(10deg);
+  }
+  
+  .tirage-hero-text {
+    max-width: 500px;
+  }
+  
+  .tirage-hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .tirage-hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .tirage-hero-text button {
+    background-color: #d4a017;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .tirage-hero-text button:hover {
+    background-color: #b58910;
+  }
+  
+  
+
+
+.tirage-container {
+    padding: 0;
+    background: #f9f9f9;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .tirage-content {
+    max-width: 1000px;
+    margin:50px auto;
+    text-align: center;
+  }
+  
+  .packs-section {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .packs-title h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .packs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .pack-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .pack-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .pack-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .pack-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .pack-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .pack-card button {
+    background-color: #d4a017;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .pack-card button:hover {
+    background-color: #b58910;
+  }
+  
+  
+  .winners-section {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .winners-title h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .winners-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .winner-card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .winner-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .winner-card img {
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .winner-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .winner-card p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .stars {
+    color: #ffd700;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .villa-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .villa-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+  }
+  
+  .villa-content img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .villa-description {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .villa-description h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .villa-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  }
+  

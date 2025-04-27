@@ -23,6 +23,14 @@ const Sidebar = () => {
             Villa
           </Link>
         </li>
+        
+        {/* إضافة الرابط الخاص بإدارة الفيلا */}
+        <li>
+          <Link to="/admin/villa-management">
+            <FaHome style={{ marginRight: '8px' }} />
+            إدارة الفيلا
+          </Link>
+        </li>
       </ul>
 
       <div className="logout-link">
